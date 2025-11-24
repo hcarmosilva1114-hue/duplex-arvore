@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Duplex T3 em Árvore — Vila do Conde | Apresentação Online</title>
-  <meta name="description" content="Apresentação online de duplex T3 em Árvore, Vila do Conde. 112 m² área bruta, terraço, garagem, duas suites, excelente exposição solar, perto do metro e da praia." />
+  <title>[TIPOLOGIA] em [LOCALIZAÇÃO CURTA] | Apresentação Online</title>
+  <meta name="description" content="Apresentação online de [TIPOLOGIA] em [LOCALIZAÇÃO COMPLETA] com [PRINCIPAIS DESTAQUES]." />
   <meta name="robots" content="index,follow" />
 
   <style>
@@ -24,11 +24,7 @@
       --max-width: 1120px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -38,10 +34,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
 
     .page {
       min-height: 100vh;
@@ -50,11 +43,9 @@
       padding: 32px 16px 48px;
     }
 
-    .shell {
-      width: 100%;
-      max-width: var(--max-width);
-    }
+    .shell { width: 100%; max-width: var(--max-width); }
 
+    /* HEADER COM TUA FOTO + LOGO */
     header {
       display: flex;
       align-items: center;
@@ -69,24 +60,32 @@
       box-shadow: var(--shadow-soft);
     }
 
-    .brand-block {
+    @media (max-width: 780px) {
+      header { flex-direction: column; align-items: flex-start; }
+    }
+
+    .brand-left {
       display: flex;
       align-items: center;
       gap: 16px;
     }
 
-    .brand-avatar {
-      width: 52px;
-      height: 52px;
+    .brand-photo-wrap {
+      width: 64px;
+      height: 64px;
       border-radius: 50%;
-      background: radial-gradient(circle at 30% 20%, #ffffff 0, #9ea3b8 32%, #383c4f 70%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 20px;
-      letter-spacing: 0.03em;
-      color: #14151d;
+      overflow: hidden;
+      border: 2px solid rgba(255,255,255,0.65);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.55);
+      background: #11121b;
+      flex-shrink: 0;
+    }
+
+    .brand-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .brand-meta h1 {
@@ -99,6 +98,27 @@
     .brand-meta p {
       font-size: 13px;
       color: var(--muted);
+    }
+
+    .brand-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+    }
+
+    @media (max-width: 780px) {
+      .brand-right { align-items: flex-start; }
+    }
+
+    .logo-wrap {
+      max-width: 180px;
+    }
+
+    .logo-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     .tagline {
@@ -119,7 +139,7 @@
       font-weight: 600;
     }
 
-    /* Hero */
+    /* HERO */
     .hero {
       display: grid;
       grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
@@ -128,13 +148,7 @@
     }
 
     @media (max-width: 840px) {
-      .hero {
-        grid-template-columns: minmax(0, 1fr);
-      }
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      .hero { grid-template-columns: minmax(0, 1fr); }
     }
 
     .hero-text {
@@ -194,9 +208,7 @@
       color: var(--muted);
     }
 
-    .hero-meta-item strong {
-      color: var(--text);
-    }
+    .hero-meta-item strong { color: var(--text); }
 
     .hero-price-block {
       display: flex;
@@ -293,10 +305,7 @@
       color: var(--muted);
     }
 
-    .hero-img-wrap {
-      flex: 1;
-      overflow: hidden;
-    }
+    .hero-img-wrap { flex: 1; overflow: hidden; }
 
     .hero-img {
       width: 100%;
@@ -318,14 +327,9 @@
       color: var(--muted);
     }
 
-    .hero-strip span strong {
-      color: var(--text);
-    }
+    .hero-strip span strong { color: var(--text); }
 
-    /* Sections */
-    section {
-      margin-bottom: 28px;
-    }
+    section { margin-bottom: 28px; }
 
     .section-title {
       font-size: 18px;
@@ -339,7 +343,7 @@
       margin-bottom: 16px;
     }
 
-    /* Highlights */
+    /* Destaques */
     .highlights-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -347,15 +351,11 @@
     }
 
     @media (max-width: 960px) {
-      .highlights-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+      .highlights-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
     @media (max-width: 600px) {
-      .highlights-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
+      .highlights-grid { grid-template-columns: minmax(0, 1fr); }
     }
 
     .highlight-card {
@@ -380,7 +380,7 @@
       font-weight: 600;
     }
 
-    /* Layout + description */
+    /* Card layout */
     .two-col {
       display: grid;
       grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
@@ -388,9 +388,7 @@
     }
 
     @media (max-width: 900px) {
-      .two-col {
-        grid-template-columns: minmax(0, 1fr);
-      }
+      .two-col { grid-template-columns: minmax(0, 1fr); }
     }
 
     .card {
@@ -408,10 +406,7 @@
       margin-bottom: 8px;
     }
 
-    .card p {
-      font-size: 14px;
-      color: var(--muted);
-    }
+    .card p { font-size: 14px; color: var(--muted); }
 
     .list {
       margin: 8px 0 0;
@@ -420,11 +415,9 @@
       font-size: 14px;
     }
 
-    .list li + li {
-      margin-top: 4px;
-    }
+    .list li + li { margin-top: 4px; }
 
-    /* Gallery */
+    /* GALERIA FLEXÍVEL (MUITAS FOTOS) */
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -432,15 +425,11 @@
     }
 
     @media (max-width: 960px) {
-      .gallery-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
+      .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     }
 
     @media (max-width: 720px) {
-      .gallery-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+      .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
     .gallery-item {
@@ -471,7 +460,6 @@
       color: var(--muted);
     }
 
-    /* Location */
     .pill-row {
       display: flex;
       flex-wrap: wrap;
@@ -488,7 +476,6 @@
       color: var(--muted);
     }
 
-    /* Rent note */
     .note {
       margin-top: 8px;
       padding: 10px 12px;
@@ -511,24 +498,30 @@
       justify-content: space-between;
     }
 
-    footer strong {
-      color: var(--text);
-    }
+    footer strong { color: var(--text); }
   </style>
 </head>
 <body>
   <div class="page">
     <div class="shell">
 
+      <!-- HEADER -->
       <header>
-        <div class="brand-block">
-          <div class="brand-avatar">HS</div>
+        <div class="brand-left">
+          <div class="brand-photo-wrap">
+            <!-- SUBSTITUIR NOME SE PRECISARES -->
+            <img src="hugo-silva.jpg" alt="Hugo Silva - Consultor Imobiliário">
+          </div>
           <div class="brand-meta">
             <h1>Hugo Silva</h1>
             <p>Consultor Imobiliário — Grande Porto, Vila do Conde e Póvoa</p>
           </div>
         </div>
-        <div>
+        <div class="brand-right">
+          <div class="logo-wrap">
+            <!-- LOGO REMAX ELEGANCE -->
+            <img src="remax-elegance-logo.jpg" alt="RE/MAX Elegance">
+          </div>
           <div class="tagline">
             Choose Your Dream <span>|</span> Live in it
           </div>
@@ -541,34 +534,34 @@
           <div class="hero-text">
             <div class="pill-location">
               <div class="pill-location-dot"></div>
-              Duplex T3 — Árvore, Vila do Conde
+              [TIPOLOGIA] — [LOCALIZAÇÃO CURTA]
             </div>
             <h2 class="hero-title">
-              Duplex T3 com terraço, duas suites e garagem, junto ao metro da Varziela
+              [TÍTULO PRINCIPAL DO IMÓVEL]
             </h2>
             <p class="hero-sub">
-              Apartamento em excelente estado, com 112 m² de área bruta, ótima exposição solar norte-sul, terraço com churrasqueira e lugar de garagem. Zona residencial tranquila, a poucos minutos da praia e com metro a cerca de 500 m.
+              [RESUMO CURTO DO IMÓVEL: estado, áreas, pontos fortes, proximidade de transportes / praia / serviços].
             </p>
 
             <div class="hero-meta">
-              <div class="hero-meta-item"><strong>T3</strong> · Duplex</div>
-              <div class="hero-meta-item"><strong>112 m²</strong> área bruta</div>
-              <div class="hero-meta-item"><strong>99 m²</strong> área útil</div>
-              <div class="hero-meta-item"><strong>3</strong> casas de banho</div>
-              <div class="hero-meta-item"><strong>Terraço</strong> privativo</div>
-              <div class="hero-meta-item"><strong>Garagem</strong> descoberta incluída</div>
+              <div class="hero-meta-item"><strong>[TIPOLOGIA]</strong></div>
+              <div class="hero-meta-item"><strong>[ÁREA BRUTA]</strong> m² área bruta</div>
+              <div class="hero-meta-item"><strong>[ÁREA ÚTIL]</strong> m² área útil</div>
+              <div class="hero-meta-item"><strong>[N.º QUARTOS]</strong> quartos</div>
+              <div class="hero-meta-item"><strong>[N.º WC]</strong> casas de banho</div>
+              <div class="hero-meta-item"><strong>[PRINCIPAL EXTRA]</strong></div>
             </div>
 
             <div class="hero-price-block">
-              <div class="price">240.000 €</div>
-              <div class="sqm">≈ 2.143 €/m²</div>
+              <div class="price">[PREÇO] €</div>
+              <div class="sqm">≈ [PREÇO POR M2] €/m²</div>
             </div>
 
             <div class="hero-cta-row">
               <a class="btn btn-primary" href="https://wa.me/351926691685" target="_blank" rel="noopener noreferrer">
                 Contactar via WhatsApp
               </a>
-              <a class="btn btn-secondary" href="mailto:seu-email@seu-dominio.pt?subject=Interesse%20no%20Duplex%20T3%20em%20Árvore">
+              <a class="btn btn-secondary" href="mailto:seu-email@seu-dominio.pt?subject=Interesse%20em%20[TÍTULO%20IMÓVEL]">
                 Enviar email
               </a>
             </div>
@@ -578,18 +571,18 @@
           </div>
 
           <aside class="hero-media">
-            <div class="hero-badge">Vista interior — cozinha e sala</div>
+            <div class="hero-badge">[DESTAQUE DA FOTO PRINCIPAL]</div>
             <div class="hero-img-wrap">
-              <!-- Podes substituir esta imagem por fotos próprias do imóvel -->
+              <!-- FOTO PRINCIPAL -->
               <img
                 class="hero-img"
-                src="https://img4.idealista.pt/blur/WEB_DETAIL_TOP-L-L/0/id.pro.pt.image.master/da/d3/d4/295534746.jpg"
-                alt="Cozinha em open space com sala de estar do duplex T3 em Árvore"
+                src="images/foto1.jpg"
+                alt="[Descrição da foto principal do imóvel]"
               />
             </div>
             <div class="hero-strip">
-              <span><strong>Localização:</strong> Árvore, Vila do Conde (Porto)</span>
-              <span>Praia a ~2 km · Metro Varziela a ~500 m</span>
+              <span><strong>Localização:</strong> [LOCALIZAÇÃO COMPLETA]</span>
+              <span>[RESUMO: proximidade praia/metro/centro]</span>
             </div>
           </aside>
         </section>
@@ -604,92 +597,84 @@
           <div class="highlights-grid">
             <div class="highlight-card">
               <div class="highlight-label">Tipologia</div>
-              <div class="highlight-value">T3 · Duplex</div>
-              <p>Distribuição em dois pisos, com uma suite em cada piso.</p>
+              <div class="highlight-value">[TIPOLOGIA]</div>
+              <p>[Texto curto sobre a tipologia, ex: duplex, moradia em banda, etc.]</p>
             </div>
 
             <div class="highlight-card">
               <div class="highlight-label">Área</div>
-              <div class="highlight-value">112 m² brutos</div>
-              <p>99 m² de área útil bem aproveitada, com zonas sociais amplas.</p>
+              <div class="highlight-value">[ÁREA BRUTA] m²</div>
+              <p>[Detalhe sobre aproveitamento de áreas, varandas, terraços, etc.]</p>
             </div>
 
             <div class="highlight-card">
               <div class="highlight-label">Estado</div>
-              <div class="highlight-value">Segunda mão / bom estado</div>
-              <p>Edifício recente, construção de 2023, com acabamentos atuais.</p>
+              <div class="highlight-value">[ESTADO]</div>
+              <p>[Ex: construção recente, remodelado, pronto a habitar.]</p>
             </div>
 
             <div class="highlight-card">
               <div class="highlight-label">Preço</div>
-              <div class="highlight-value">240.000 €</div>
-              <p>Valor competitivo face à zona, proximidade do metro e da praia.</p>
+              <div class="highlight-value">[PREÇO] €</div>
+              <p>[Comentário opcional sobre relação preço/localização.]</p>
             </div>
 
             <div class="highlight-card">
               <div class="highlight-label">Exposição solar</div>
-              <div class="highlight-value">Norte · Sul</div>
-              <p>Boa luminosidade ao longo do dia, equilibrando conforto e eficiência.</p>
+              <div class="highlight-value">[EXPOSIÇÃO]</div>
+              <p>[Breve nota sobre luminosidade.]</p>
             </div>
 
             <div class="highlight-card">
               <div class="highlight-label">Exterior</div>
-              <div class="highlight-value">Terraço privativo</div>
-              <p>Espaço amplo com churrasqueira, ideal para refeições e convívio.</p>
+              <div class="highlight-value">[TERRAÇO/JARDIM]</div>
+              <p>[Descrição curta do espaço exterior.]</p>
             </div>
 
             <div class="highlight-card">
               <div class="highlight-label">Estacionamento</div>
-              <div class="highlight-value">Lugar incluído</div>
-              <p>Lugar de garagem descoberto incluído no preço.</p>
+              <div class="highlight-value">[GARAGEM/BOX/LUGAR]</div>
+              <p>[Detalhe de estacionamento e acessos.]</p>
             </div>
 
             <div class="highlight-card">
               <div class="highlight-label">Ano</div>
-              <div class="highlight-value">2023</div>
-              <p>Imóvel recente, com vidros duplos e soluções atuais de conforto.</p>
+              <div class="highlight-value">[ANO]</div>
+              <p>[Texto sobre a idade do imóvel/edifício.]</p>
             </div>
           </div>
         </section>
 
-        <!-- DESCRIÇÃO + LAYOUT -->
+        <!-- DESCRIÇÃO + CARACTERÍSTICAS -->
         <section>
           <div class="two-col">
             <article class="card">
               <h3>Descrição do imóvel</h3>
               <p>
-                Este duplex T3 em Árvore foi pensado para quem procura conforto, funcionalidade e proximidade a transportes
-                e ao litoral. No piso de entrada, a cozinha mobilada e equipada integra-se em open space com a sala de
-                estar, criando uma zona social ampla e prática para o dia a dia.
+                [DESCRIÇÃO PRINCIPAL DO IMÓVEL: zonas sociais, cozinha, sala, ligação ao exterior,
+                ambiente geral, tipo de construção, materiais principais, etc.]
               </p>
               <p style="margin-top: 10px;">
-                O apartamento dispõe de duas suites — uma em cada piso — totalizando três instalações sanitárias completas,
-                duas delas privativas. A combinação de terraço privativo com churrasqueira, lugar de garagem e zona de
-                arrumos torna o imóvel interessante tanto para habitação própria como para investimento.
-              </p>
-              <p style="margin-top: 10px;">
-                A exposição solar norte-sul, os vidros duplos e a proximidade à praia e ao metro reforçam a atratividade
-                deste duplex numa freguesia em crescimento no concelho de Vila do Conde.
+                [SEGUNDO BLOCO DE TEXTO: suites/quartos, conforto, arrumação, quem é o público ideal
+                (família, investidor, primeira habitação, etc.).]
               </p>
               <div class="note">
-                O imóvel encontra-se atualmente arrendado, sendo possível agendar visitas mediante marcação prévia e
-                confirmação de condições.
+                [NOTA IMPORTANTE: ex. imóvel arrendado, em obras, pronto a escriturar, etc.]
               </div>
             </article>
 
             <aside class="card">
               <h3>Distribuição e características</h3>
               <ul class="list">
-                <li>Cozinha mobilada e equipada em open space com sala.</li>
-                <li>Duas suites, distribuídas pelos dois pisos.</li>
-                <li>3 casas de banho completas (2 privativas, 1 de apoio).</li>
-                <li>Terraço privativo amplo com churrasqueira.</li>
-                <li>Zona de arrumos para apoio ao dia a dia.</li>
-                <li>Vidros duplos.</li>
-                <li>Excelente exposição solar (norte-sul).</li>
-                <li>Lugar de garagem descoberto incluído no preço.</li>
-                <li>Edifício de 2023, rés do chão, sem elevador.</li>
-                <li>Proximidade a transportes, acessos e serviços essenciais.</li>
+                <li>[N.º] quartos (inclui [N.º] suites).</li>
+                <li>[N.º] casas de banho.</li>
+                <li>Cozinha [equipada/mobilada/em open space/etc.].</li>
+                <li>Sala [descrição da sala].</li>
+                <li>[Varanda/terraço/jardim] com [características].</li>
+                <li>[Tipo de janelas, vidros, isolamento].</li>
+                <li>[Climatização: aquecimento, AC, etc.].</li>
+                <li>[Estacionamento e arrumos].</li>
+                <li>[Outros pontos relevantes].</li>
               </ul>
             </aside>
           </div>
@@ -700,66 +685,91 @@
           <h2 class="section-title">Localização e envolvente</h2>
           <div class="two-col">
             <div class="card">
-              <h3>Árvore, Vila do Conde</h3>
+              <h3>[LOCALIZAÇÃO CURTA]</h3>
               <p>
-                A freguesia de Árvore beneficia da proximidade ao mar, a zonas verdes e a excelentes acessos rodoviários e
-                ferroviários. Este duplex está localizado numa zona residencial, com acesso rápido a comércio, serviços e
-                transportes.
+                [TEXTO SOBRE A ZONA: tipo de bairro, proximidade a praia/parque/rio/centro, qualidade de
+                vida, acessos, etc.]
               </p>
               <p style="margin-top: 10px;">
-                A estação de metro da Varziela encontra-se a cerca de 500 metros, permitindo ligação direta ao Porto e a
-                outras zonas da Área Metropolitana. A praia está a aproximadamente 2 km, ideal para quem valoriza o
-                contacto com o litoral no quotidiano.
+                [INFORMAÇÃO ADICIONAL: distâncias a metro, comboio, principais vias, etc.]
               </p>
 
               <div class="pill-row">
-                <div class="pill">~500 m do metro Varziela</div>
-                <div class="pill">~2 km da praia</div>
-                <div class="pill">Acessos rodoviários próximos</div>
-                <div class="pill">Comércio e serviços nas imediações</div>
+                <div class="pill">[Distância a transportes]</div>
+                <div class="pill">[Distância a escolas/serviços]</div>
+                <div class="pill">[Ponto de interesse 1]</div>
+                <div class="pill">[Ponto de interesse 2]</div>
               </div>
             </div>
 
             <div class="card">
-              <h3>Mapa e referência</h3>
+              <h3>Referência de localização</h3>
               <p>
-                Por motivos de privacidade, a localização exata não é indicada nesta apresentação. A zona corresponde à
-                freguesia de Árvore, concelho de Vila do Conde, distrito do Porto.
-              </p>
-              <p style="margin-top: 10px;">
-                Em caso de interesse efetivo, serão facultados mais detalhes de localização e logística de visita.
+                Por motivos de privacidade, a localização exata não é indicada nesta apresentação. A
+                informação detalhada é facultada em contexto de visita ou negociação avançada.
               </p>
               <ul class="list">
-                <li>Concelho: Vila do Conde</li>
-                <li>Distrito: Porto</li>
-                <li>Freguesia: Árvore</li>
+                <li>Concelho: [CONCELHO]</li>
+                <li>Distrito: [DISTRITO]</li>
+                <li>Freguesia: [FREGUESIA]</li>
               </ul>
             </div>
           </div>
         </section>
 
-        <!-- GALERIA -->
+        <!-- GALERIA COM MUITAS FOTOS -->
         <section>
           <h2 class="section-title">Imagens do imóvel</h2>
           <p class="section-sub">
-            Sugestão de grelha para fotografias. Podes substituir os ficheiros de exemplo por imagens próprias do imóvel.
+            As imagens seguintes representam o estado atual do imóvel. Podem ser fornecidos mais
+            registos fotográficos ou vídeo mediante pedido.
           </p>
+
           <div class="gallery-grid">
+            <!-- COPIA ESTES BLOCOS PARA TER MAIS FOTOS -->
             <div class="gallery-item">
-              <img src="https://img4.idealista.pt/blur/WEB_DETAIL_TOP-L-L/0/id.pro.pt.image.master/da/d3/d4/295534746.jpg" alt="Cozinha em open space com sala de estar do duplex">
-              <span>Cozinha + Sala</span>
+              <img src="images/foto1.jpg" alt="[Descrição foto 1]">
+              <span>[Legenda 1]</span>
             </div>
+
             <div class="gallery-item">
-              <img src="images/quarto-suite.jpg" alt="Quarto em suite do duplex T3 em Árvore">
-              <span>Suite</span>
+              <img src="images/foto2.jpg" alt="[Descrição foto 2]">
+              <span>[Legenda 2]</span>
             </div>
+
             <div class="gallery-item">
-              <img src="images/terraco.jpg" alt="Terraço com churrasqueira do duplex T3 em Árvore">
-              <span>Terraço</span>
+              <img src="images/foto3.jpg" alt="[Descrição foto 3]">
+              <span>[Legenda 3]</span>
             </div>
+
             <div class="gallery-item">
-              <img src="images/garagem.jpg" alt="Lugar de garagem do duplex T3 em Árvore">
-              <span>Garagem</span>
+              <img src="images/foto4.jpg" alt="[Descrição foto 4]">
+              <span>[Legenda 4]</span>
+            </div>
+
+            <div class="gallery-item">
+              <img src="images/foto5.jpg" alt="[Descrição foto 5]">
+              <span>[Legenda 5]</span>
+            </div>
+
+            <div class="gallery-item">
+              <img src="images/foto6.jpg" alt="[Descrição foto 6]">
+              <span>[Legenda 6]</span>
+            </div>
+
+            <div class="gallery-item">
+              <img src="images/foto7.jpg" alt="[Descrição foto 7]">
+              <span>[Legenda 7]</span>
+            </div>
+
+            <div class="gallery-item">
+              <img src="images/foto8.jpg" alt="[Descrição foto 8]">
+              <span>[Legenda 8]</span>
+            </div>
+
+            <div class="gallery-item">
+              <img src="images/foto9.jpg" alt="[Descrição foto 9]">
+              <span>[Legenda 9]</span>
             </div>
           </div>
         </section>
@@ -769,14 +779,14 @@
           <div class="card">
             <h3>Quer falar sobre este imóvel ou receber outras opções?</h3>
             <p>
-              Se pretende mais informação, esclarecimento de dúvidas ou explorar imóveis alternativos na mesma zona, estou
-              disponível para o apoiar em todo o processo de compra.
+              Se pretende mais informação, esclarecimento de dúvidas ou explorar imóveis alternativos na
+              mesma zona, estou disponível para o apoiar em todo o processo de compra ou venda.
             </p>
             <div class="hero-cta-row" style="margin-top: 16px;">
               <a class="btn btn-primary" href="https://wa.me/351926691685" target="_blank" rel="noopener noreferrer">
                 Falar agora no WhatsApp
               </a>
-              <a class="btn btn-secondary" href="mailto:seu-email@seu-dominio.pt?subject=Duplex%20T3%20em%20Árvore%20-%20Pedido%20de%20informações">
+              <a class="btn btn-secondary" href="mailto:seu-email@seu-dominio.pt?subject=Pedido%20de%20informações%20-%20[IMÓVEL]">
                 Pedir mais informações por email
               </a>
             </div>
