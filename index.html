@@ -483,3 +483,302 @@
       background: rgba(230, 57, 70, 0.12);
       border: 1px solid rgba(230, 57, 70, 0.4);
       font-size: 13px;
+      color: #ffdfe3;
+    }
+
+    footer {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: space-between;
+    }
+
+    footer strong { color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="shell">
+
+      <!-- HEADER -->
+      <header>
+        <div class="brand-left">
+          <div class="brand-photo-wrap">
+            <img src="hugo-silva.jpg" alt="Hugo Silva - Consultor Imobiliário">
+          </div>
+          <div class="brand-meta">
+            <h1>Hugo Silva</h1>
+            <p>Consultor Imobiliário — Grande Porto, Vila do Conde e Póvoa</p>
+          </div>
+        </div>
+        <div class="brand-right">
+          <div class="logo-wrap">
+            <img src="remax-elegance-logo.jpg" alt="RE/MAX Elegance">
+          </div>
+          <div class="tagline">
+            Choose Your Dream <span>|</span> Live in it
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- HERO -->
+        <section class="hero">
+          <div class="hero-text">
+            <div class="pill-location">
+              <div class="pill-location-dot"></div>
+              T3 Duplex — Árvore, Vila do Conde
+            </div>
+            <h2 class="hero-title">
+              Duplex T3 com terraço, duas suites e garagem em Árvore
+            </h2>
+            <p class="hero-sub">
+              Excelente apartamento T3 duplex a 500 m do metro da Varziela, em Árvore. Cozinha mobilada e equipada em open space com sala, duas suites (uma em cada piso), três casas de banho completas, terraço privativo com churrasqueira, lugar de garagem descoberto e zona de arrumos. Exposição solar norte-sul, vidros duplos e proximidade à praia (~2 km), acessos, transportes e serviços.
+            </p>
+
+            <div class="hero-meta">
+              <div class="hero-meta-item"><strong>T3 Duplex</strong></div>
+              <div class="hero-meta-item"><strong>112 m²</strong> área bruta</div>
+              <div class="hero-meta-item"><strong>~99 m²</strong> área útil (aprox.)</div>
+              <div class="hero-meta-item"><strong>3</strong> casas de banho</div>
+              <div class="hero-meta-item"><strong>Terraço</strong> com churrasqueira</div>
+              <div class="hero-meta-item"><strong>Lugar de garagem</strong> descoberto</div>
+            </div>
+
+            <div class="hero-price-block">
+              <div class="price">240.000 €</div>
+              <div class="sqm">≈ 2.143 €/m²</div>
+            </div>
+
+            <div class="hero-cta-row">
+              <a class="btn btn-primary" href="https://wa.me/351926691685" target="_blank" rel="noopener noreferrer">
+                Contactar via WhatsApp
+              </a>
+              <a class="btn btn-secondary" href="mailto:seu-email@seu-dominio.pt?subject=Interesse%20no%20Duplex%20T3%20em%20%C3%81rvore">
+                Enviar email
+              </a>
+            </div>
+            <p class="hero-note">
+              Informação para efeitos de apresentação ao cliente comprador. Detalhes sujeitos a confirmação.
+            </p>
+          </div>
+
+          <aside class="hero-media">
+            <div class="hero-badge">Sala e cozinha em open space</div>
+            <div class="hero-img-wrap">
+              <!-- Foto principal (substituir pelo ficheiro real) -->
+              <img
+                class="hero-img"
+                src="images/foto1.jpg"
+                alt="Sala e cozinha em open space do duplex T3 em Árvore"
+              />
+            </div>
+            <div class="hero-strip">
+              <span><strong>Localização:</strong> Árvore, Vila do Conde (Porto)</span>
+              <span>A ~500 m do metro Varziela · ~2 km da praia</span>
+            </div>
+          </aside>
+        </section>
+
+        <!-- DESTAQUES -->
+        <section>
+          <h2 class="section-title">Destaques principais</h2>
+          <p class="section-sub">
+            Síntese das características mais relevantes do imóvel para apoiar a decisão de compra.
+          </p>
+
+          <div class="highlights-grid">
+            <div class="highlight-card">
+              <div class="highlight-label">Tipologia</div>
+              <div class="highlight-value">T3 Duplex</div>
+              <p>Distribuição em dois pisos, com uma suite em cada piso.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-label">Área</div>
+              <div class="highlight-value">112 m² brutos</div>
+              <p>Área bem aproveitada, com zona social em open space e terraço privativo.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-label">Estado</div>
+              <div class="highlight-value">Pronto a habitar</div>
+              <p>Apartamento em bom estado, com acabamentos atuais e vidros duplos.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-label">Preço</div>
+              <div class="highlight-value">240.000 €</div>
+              <p>Valor competitivo face à localização e características.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-label">Exposição solar</div>
+              <div class="highlight-value">Norte-Sul</div>
+              <p>Excelente luminosidade e conforto ao longo do dia.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-label">Exterior</div>
+              <div class="highlight-value">Terraço privativo</div>
+              <p>Terraço amplo, com churrasqueira, ideal para convívio.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-label">Estacionamento</div>
+              <div class="highlight-value">Lugar incluído</div>
+              <p>Lugar de garagem descoberto incluído no preço.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-label">Localização</div>
+              <div class="highlight-value">Árvore</div>
+              <p>Zona residencial tranquila, perto do metro, praia e serviços.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- DESCRIÇÃO + CARACTERÍSTICAS -->
+        <section>
+          <div class="two-col">
+            <article class="card">
+              <h3>Descrição do imóvel</h3>
+              <p>
+                Excelente apartamento T3 duplex localizado em Árvore, Vila do Conde, a cerca de 500 m do metro da Varziela e a aproximadamente 2 km da praia. Ideal para quem procura conforto, funcionalidade e proximidade a transportes e ao litoral.
+              </p>
+              <p style="margin-top: 10px;">
+                No piso de entrada encontra a zona social, com cozinha mobilada e equipada em open space com a sala, criando um espaço amplo e fluido para o dia a dia. O imóvel dispõe de duas suites, uma em cada piso, totalizando três casas de banho completas, duas delas privativas.
+              </p>
+              <p style="margin-top: 10px;">
+                O terraço privativo, com churrasqueira, oferece um excelente espaço exterior para refeições, convívio e lazer. Conta ainda com zona de arrumos, lugar de garagem descoberto e vidros duplos, beneficiando de ótima exposição solar norte-sul.
+              </p>
+              <div class="note">
+                O imóvel encontra-se arrendado. Visitas e condições de negócio ficam sujeitas a agendamento e confirmação prévia.
+              </div>
+            </article>
+
+            <aside class="card">
+              <h3>Distribuição e características</h3>
+              <ul class="list">
+                <li>Tipologia T3 em regime duplex.</li>
+                <li>Duas suites, uma em cada piso.</li>
+                <li>3 casas de banho completas (2 privativas, 1 de apoio).</li>
+                <li>Cozinha mobilada e equipada em open space com sala.</li>
+                <li>Terraço privativo amplo com churrasqueira.</li>
+                <li>Zona de arrumos.</li>
+                <li>Vidros duplos.</li>
+                <li>Excelente exposição solar norte-sul.</li>
+                <li>Lugar de garagem descoberto incluído.</li>
+                <li>Localização próxima de transportes, acessos e serviços.</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <!-- LOCALIZAÇÃO -->
+        <section>
+          <h2 class="section-title">Localização e envolvente</h2>
+          <div class="two-col">
+            <div class="card">
+              <h3>Árvore, Vila do Conde</h3>
+              <p>
+                Árvore é uma freguesia do concelho de Vila do Conde que combina a tranquilidade de uma zona residencial com a proximidade ao mar, a espaços verdes e a bons acessos rodoviários e ferroviários.
+              </p>
+              <p style="margin-top: 10px;">
+                O apartamento situa-se a cerca de 500 m do metro da Varziela, permitindo ligação direta ao Porto e a outras zonas da Área Metropolitana. A praia fica a aproximadamente 2 km, ideal para quem valoriza o contacto com o litoral no quotidiano.
+              </p>
+
+              <div class="pill-row">
+                <div class="pill">~500 m do metro Varziela</div>
+                <div class="pill">~2 km da praia</div>
+                <div class="pill">Acessos rodoviários próximos</div>
+                <div class="pill">Comércio e serviços nas imediações</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Referência de localização</h3>
+              <p>
+                Por motivos de privacidade, a localização exata não é indicada nesta apresentação. A zona corresponde à freguesia de Árvore, concelho de Vila do Conde, distrito do Porto.
+              </p>
+              <ul class="list">
+                <li>Concelho: Vila do Conde</li>
+                <li>Distrito: Porto</li>
+                <li>Freguesia: Árvore</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- GALERIA (SÓ 6 FOTOS) -->
+        <section>
+          <h2 class="section-title">Imagens do imóvel</h2>
+          <p class="section-sub">
+            As imagens seguintes representam o estado atual do imóvel. Podem ser fornecidos mais registos fotográficos ou vídeo mediante pedido.
+          </p>
+
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="images/foto1.jpg" alt="Sala e cozinha em open space">
+              <span>Sala + Cozinha</span>
+            </div>
+            <div class="gallery-item">
+              <img src="images/foto2.jpg" alt="Suite principal">
+              <span>Suite principal</span>
+            </div>
+            <div class="gallery-item">
+              <img src="images/foto3.jpg" alt="Segunda suite">
+              <span>Segunda suite</span>
+            </div>
+            <div class="gallery-item">
+              <img src="images/foto4.jpg" alt="Quarto adicional / apoio">
+              <span>Quarto</span>
+            </div>
+            <div class="gallery-item">
+              <img src="images/foto5.jpg" alt="Terraço com churrasqueira">
+              <span>Terraço com churrasqueira</span>
+            </div>
+            <div class="gallery-item">
+              <img src="images/foto6.jpg" alt="Zona exterior / vista">
+              <span>Zona exterior</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section>
+          <div class="card">
+            <h3>Quer falar sobre este imóvel ou receber outras opções?</h3>
+            <p>
+              Se pretende mais informação, esclarecimento de dúvidas ou explorar imóveis alternativos na mesma zona, estou disponível para o apoiar em todo o processo de compra ou investimento.
+            </p>
+            <div class="hero-cta-row" style="margin-top: 16px;">
+              <a class="btn btn-primary" href="https://wa.me/351926691685" target="_blank" rel="noopener noreferrer">
+                Falar agora no WhatsApp
+              </a>
+              <a class="btn btn-secondary" href="mailto:seu-email@seu-dominio.pt?subject=Pedido%20de%20informa%C3%A7%C3%B5es%20-%20Duplex%20T3%20em%20%C3%81rvore">
+                Pedir mais informações por email
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div>
+          <strong>Hugo Silva</strong> · Consultor Imobiliário · WhatsApp: 926 691 685
+        </div>
+        <div>
+          Choose Your Dream | Live in it
+        </div>
+      </footer>
+
+    </div>
+  </div>
+</body>
+</html>
